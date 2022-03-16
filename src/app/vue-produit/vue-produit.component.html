@@ -1,0 +1,14 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Infos Du Produit {{data.id}}</mat-card-title>
+      <mat-card-subtitle>Le produit: {{data.nom}}</mat-card-subtitle>
+    </mat-card-header>
+    
+    <mat-card-content>
+        <h3>Unité de mesure : {{data.unite}}</h3>
+        <h3>Prix: {{data.prix | currency: 'Eur'}}</h3>
+        <h3>Date de Disponibilité: {{data.dateDispo}}</h3>
+        <p>Description: {{data.description}}</p>
+    </mat-card-content>
+  </mat-card>

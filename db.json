@@ -1,0 +1,122 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ahmed",
+      "password": "12345678"
+    },
+    {
+      "username": "afaf",
+      "password": "afafaf",
+      "id": 2
+    },
+    {
+      "username": "fafa",
+      "password": "fafaf",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Asus Led Monitor",
+      "description": "1ms 75 hz et 23,8 pouces",
+      "price": 200
+    },
+    {
+      "id": 2,
+      "name": "Canon Printer",
+      "description": "PIXMA TS3420 High Quality",
+      "price": 70
+    },
+    {
+      "id": 3,
+      "name": "HP Laptop ",
+      "description": "Intel Core i5-1137G7 1TB SSD/16GB RAM",
+      "price": 1000
+    },
+    {
+      "id": 4,
+      "name": "Air Fryer",
+      "description": "Ninja foodi 6-in-1 dual zone",
+      "price": 190
+    },
+    {
+      "id": 5,
+      "name": "Stand Mixer",
+      "description": "KitchenAid Professional 600 Lift Bowl",
+      "price": 399
+    },
+    {
+      "id": 6,
+      "name": "Apple Ipad",
+      "description": "Ipad 10.2 64GB 9th Generation",
+      "price": 429
+    },
+    {
+      "id": 7,
+      "name": "SanDisk 128GB",
+      "description": "100MB/S microSDXC Memory Card",
+      "price": 39
+    },
+    {
+      "id": 8,
+      "name": "Logitech Webcam",
+      "description": "C920S PRO 1080P HD",
+      "price": 99
+    },
+    {
+      "id": 9,
+      "name": "Oculus Quest 2",
+      "description": "128GB VR Headset with Touch Controllers",
+      "price": 400
+    },
+    {
+      "id": 10,
+      "name": "Samsung TV ",
+      "description": "55 4K UHD HDR LED Tizen Smart",
+      "price": 750
+    },
+    {
+      "id": 11,
+      "name": "Spider-Man PS4 Game",
+      "description": "Miles Morales (PS4) ",
+      "price": 65
+    },
+    {
+      "id": 12,
+      "name": "Toshiba Hard Drive",
+      "description": " Toshiba Canvio Advance 4TB USB 3.0 EXTERNAL HARD DRIVE BLACK",
+      "price": 119
+    },
+    {
+      "id": 13,
+      "name": "vfusfj",
+      "description": "sgdgxdhwe",
+      "price": 200
+    },
+    {
+      "id": 14,
+      "name": "nullproduct ",
+      "description": "nulldescription",
+      "price": null
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
