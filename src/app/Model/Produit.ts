@@ -6,7 +6,7 @@ export class Produit{
     description!: string;
     prix!: number;
     image!: string;
-    status!: string;
+    statut!: string;
     dateDispo!: string;
 
 }

@@ -4,6 +4,7 @@ import { ProduitService } from '../services/produit.service';
 import { MatDialog } from '@angular/material/dialog';
 import { VueProduitComponent } from '../vue-produit/vue-produit.component';
 import { AddProduitComponent } from '../add-produit/add-produit.component';
+import { ModifierProduitComponent } from '../modifier-produit/modifier-produit.component';
 
 
 @Component({
@@ -36,5 +37,11 @@ export class ListeProduitsComponent implements OnInit {
 
   }
   
+  openDialogModifier(element: Produit) {
+    this.matDialog.open(ModifierProduitComponent
+     , {
+       data: element
+       });
+   }
 
 }

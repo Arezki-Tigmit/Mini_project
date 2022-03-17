@@ -18,6 +18,7 @@ import { AddProduitComponent } from './add-produit/add-produit.component';
 import { MatFormFieldModule, MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './shared/material.module';
+import { ModifierProduitComponent } from './modifier-produit/modifier-produit.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { MaterialModule } from './shared/material.module';
     AppComponent,
     ListeProduitsComponent,
     VueProduitComponent,
-    AddProduitComponent
+    AddProduitComponent,
+    ModifierProduitComponent
   ],
   
   imports: [

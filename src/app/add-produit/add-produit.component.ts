@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Produit } from '../Model/Produit';
 import { ProduitService } from '../services/produit.service';
 
@@ -10,7 +10,7 @@ import { ProduitService } from '../services/produit.service';
 })
 export class AddProduitComponent implements OnInit {
   produitFormGroup!: FormGroup;
-  newProduit!: Produit;
+  
   constructor(private fb: FormBuilder, private productSrevice: ProduitService) { }
 
   ngOnInit(): void {
@@ -18,7 +18,7 @@ export class AddProduitComponent implements OnInit {
       id: [],
       nom: [],
       unite: [],
-      prix: [],
+      prix: ['', Validators.required],
       statut: [],
       
 
@@ -30,10 +30,17 @@ export class AddProduitComponent implements OnInit {
   addProduit(){
 
     console.log('produit', this.produitFormGroup.getRawValue());
-    this.productSrevice.postProduit(this.produitFormGroup.getRawValue());
+    this.productSrevice.postProduit(this.produitFormGroup.getRawValue()).
+    subscribe(
+      {
+        next: (res)=>{alert('Add successfull!')},
+        error: ()=>{alert('erreure!')}
+      }
+    );
     
 
 
   }
+  
 
 }

@@ -1,0 +1,65 @@
+
+<mat-card class="example-card">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title >Modifier le Produit No: {{data.id}}</mat-card-title>
+      </mat-card-header>
+
+    <form [formGroup]="produitFormGroup">
+        <div fxLayout="column" fxLayoutAlign="space-around center" >
+
+            <div>
+                  <mat-form-field appearance="legacy">
+                    <mat-label>Nom:</mat-label>
+                    <input matInput placeholder="Nom" formControlName="nom">
+                  </mat-form-field></div>
+
+            <div>
+                    <mat-form-field appearance="legacy">
+                      <mat-label>Unité de mesure:</mat-label>
+                      <input matInput placeholder="Unité de mesure" formControlName="unite" >
+                    </mat-form-field></div>
+
+                    <div>
+                        <mat-form-field appearance="legacy">
+                          <mat-label>Prix:</mat-label>
+                          <input matInput placeholder="Prix" formControlName="prix">
+                        </mat-form-field></div>
+
+                              
+                    <div>
+                            <mat-form-field appearance="fill">
+                                <mat-label>Date de Disponibilité: </mat-label>
+                                <input matInput [matDatepicker]="picker">
+                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                 <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field></div>
+
+                            <div>
+                                <mat-slide-toggle color="#picker" formControlName="statut">Disponibilité </mat-slide-toggle></div>
+
+
+
+                                <div class="example-button-row">
+                                  <div class="example-flex-container">
+                                     <div class="example-button-container">
+                                        <button mat-mini-fab color="primary" (click)="modifierProduit()">
+                                          <mat-icon >menu</mat-icon>
+                                         </button>
+                                      </div>
+                          
+                                    </div>
+                                 </div>
+
+                            
+
+
+                  
+        </div>
+    </form>
+
+    
+    <mat-card-content>
+        
+    </mat-card-content>
+  </mat-card>
